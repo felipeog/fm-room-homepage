@@ -276,7 +276,7 @@ img {
   }
 
   .navigation {
-    display: none;
+    display: flex;
     position: absolute;
     top: 0;
     left: 0;
@@ -285,6 +285,10 @@ img {
     background: var(--white);
     align-items: center;
     padding: 1rem 2rem;
+  }
+
+  .navigation.navigation--hidden {
+    display: none;
   }
 
   .navigation__list {
@@ -318,7 +322,7 @@ img {
 
   .slider__navigation {
     position: absolute;
-    top: 18.5rem;
+    bottom: 0;
     right: 0;
   }
 

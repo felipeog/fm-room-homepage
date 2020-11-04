@@ -84,9 +84,9 @@ const mobileClose = document.querySelector('.header__mobile-close')
 
 // events
 mobileOpen.addEventListener('click', () => {
-  navigation.style.display = 'flex'
+  navigation.classList.toggle('navigation--hidden')
 })
 
 mobileClose.addEventListener('click', () => {
-  navigation.style.display = 'none'
+  navigation.classList.toggle('navigation--hidden')
 })
