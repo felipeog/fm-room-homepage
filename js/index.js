@@ -1,5 +1,5 @@
 // slider elements
-const sliderImage = document.querySelector('.slider__image img')
+const sliderImage = document.querySelector('.slider__image')
 const sliderTitle = document.querySelector('.slider__title')
 const sliderText = document.querySelector('.slider__text')
 const sliderLeft = document.querySelector('.slider__navigation-left')

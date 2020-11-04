@@ -21,57 +21,65 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <mav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Home</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Shop</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">About</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Contact</a>
-            </li>
-          </ul>
-        </mav>
+        <div class="header__container">
+          <img src="./img/logo.svg" alt="Room Logo" class="header__logo" />
+
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Home</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Shop</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">About</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
 
       <main class="sections-grid">
         <section class="slider">
-          <div class="slider__image">
-            <img src="" alt="" />
+          <div class="slider__image-wrapper">
+            <img class="slider__image" src="" alt="" />
           </div>
 
           <article class="slider__content">
-            <h1 class="slider__title">Placeholder</h1>
-            <p class="slider__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-              fuga error voluptate corrupti molestias eveniet eligendi ducimus
-              perspiciatis ipsa eaque optio quisquam soluta quos illum, nulla,
-              commodi quidem quis et?
-            </p>
+            <h1 class="slider__title"></h1>
+            <p class="slider__text"></p>
 
-            <button class="slider__button">Shop now</button>
+            <button class="slider__button">
+              Shop now
+              <img class="slider__arrow" src="./img/icon-arrow.svg" alt="" />
+            </button>
           </article>
 
           <div class="slider__navigation">
             <div class="slider__navigation-left">
-              left
-              <img src="" alt="" />
+              <img
+                class="slider__navigation-icon"
+                src="./img/icon-angle-left.svg"
+                alt=""
+              />
             </div>
             <div class="slider__navigation-right">
-              right
-              <img src="" alt="" />
+              <img
+                class="slider__navigation-icon"
+                src="./img/icon-angle-right.svg"
+                alt=""
+              />
             </div>
           </div>
         </section>
 
         <section class="about">
-          <div class="about__image">
-            <img src="" alt="" />
+          <div class="about__image-left-wrapper">
+            <img class="about__image" src="./img/image-about-dark.jpg" alt="" />
           </div>
 
           <article class="about__content">
@@ -86,8 +94,12 @@
             </p>
           </article>
 
-          <div class="about__image">
-            <img src="" alt="" />
+          <div class="about__image-right-wrapper">
+            <img
+              class="about__image"
+              src="./img/image-about-light.jpg"
+              alt=""
+            />
           </div>
         </section>
       </main>
