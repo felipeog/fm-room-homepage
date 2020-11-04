@@ -2,14 +2,14 @@
  * slider
  */
 
-// slider elements
+// elements
 const sliderImage = document.querySelector('.slider__image')
 const sliderTitle = document.querySelector('.slider__title')
 const sliderText = document.querySelector('.slider__text')
 const sliderLeft = document.querySelector('.slider__navigation-left')
 const sliderRight = document.querySelector('.slider__navigation-right')
 
-// slider content
+// content
 const slides = [
   {
     image: './img/desktop-image-hero-1.jpg',
@@ -31,7 +31,7 @@ const slides = [
   },
 ]
 
-// slider state
+// state
 let index = 0
 
 // functions
@@ -77,16 +77,21 @@ sliderRight.addEventListener('click', nextSlide)
  * navigation
  */
 
-// navigation elements
+// elements
 const navigation = document.querySelector('.navigation')
 const mobileOpen = document.querySelector('.header__mobile-open')
 const mobileClose = document.querySelector('.header__mobile-close')
 
+// functions
+const toggleNavigationClass = () => {
+  navigation.classList.toggle('navigation--hidden')
+}
+
 // events
 mobileOpen.addEventListener('click', () => {
-  navigation.classList.toggle('navigation--hidden')
+  toggleNavigationClass()
 })
 
 mobileClose.addEventListener('click', () => {
-  navigation.classList.toggle('navigation--hidden')
+  toggleNavigationClass()
 })
