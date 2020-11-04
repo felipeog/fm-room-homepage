@@ -1,3 +1,7 @@
+/************
+ * slider
+ */
+
 // slider elements
 const sliderImage = document.querySelector('.slider__image')
 const sliderTitle = document.querySelector('.slider__title')
@@ -68,3 +72,21 @@ document.addEventListener('keydown', event => {
 
 sliderLeft.addEventListener('click', previousSlide)
 sliderRight.addEventListener('click', nextSlide)
+
+/************
+ * navigation
+ */
+
+// navigation elements
+const navigation = document.querySelector('.navigation')
+const mobileOpen = document.querySelector('.header__mobile-open')
+const mobileClose = document.querySelector('.header__mobile-close')
+
+// events
+mobileOpen.addEventListener('click', () => {
+  navigation.style.display = 'flex'
+})
+
+mobileClose.addEventListener('click', () => {
+  navigation.style.display = 'none'
+})
