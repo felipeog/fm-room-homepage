@@ -103,6 +103,7 @@ img {
   font-weight: 500;
 }
 
+/* desktop */
 @media screen and (min-width: 960px) {
   .header {
     position: absolute;
@@ -238,6 +239,7 @@ img {
   }
 }
 
+/* mobile */
 @media screen and (max-width: 959px) {
   .wrapper {
     position: relative;
