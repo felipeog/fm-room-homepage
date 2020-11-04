@@ -294,7 +294,7 @@ img {
   .navigation__list {
     list-style-type: none;
     display: flex;
-    margin-left: 4rem;
+    margin-left: 2.4rem;
   }
 
   .navigation__item + .navigation__item {
@@ -318,6 +318,10 @@ img {
 
   .slider__content {
     padding: 4rem;
+  }
+
+  .slider__title {
+    font-size: 2rem;
   }
 
   .slider__navigation {
